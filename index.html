@@ -1,0 +1,38 @@
+<div class="container">
+
+<h1 class="main-title">Secab Students
+Transfer List</h1>
+
+<h2>Transfer List</h2>
+
+<div class="list">
+1. Kaship Uoti<br>
+2. Shahnawaz Gogi<br>
+3. Talha Manguli<br>
+
+<span id="readMore" class="readmore">+17 more names...</span>
+
+</div>
+
+</div>
+
+<audio id="sound" src="sound.mp3" loop></audio>
+
+<script>
+
+const sound = document.getElementById("sound");
+
+document.getElementById("readMore").onclick = function(){
+
+    sound.currentTime = 0;
+    sound.play();
+
+    this.innerHTML = "Loading...";
+    this.style.color = "gray";
+
+};
+
+</script>
+
+</body>
+</html>
